@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:background="#303030"
+    android:orientation="vertical"
+    android:gravity="center">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/calculadora"
+        android:fontFamily="@font/unicaone"
+        android:textColor="#EBEBEB"
+        android:textSize="45sp" />
+
+    <TextView
+        android:id="@+id/operacion"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/unicaone"
+        android:textSize="20sp"
+        android:textColor="#d1d1d1"
+        android:textColorHint="#cccccc"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="50dp"
+        />
+
+    <TextView
+        android:id="@+id/dato"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:fontFamily="@font/unicaone"
+        android:textSize="28sp"
+        android:textColor="#ffffff"
+        android:textColorHint="#cccccc"
+        android:layout_marginBottom="30dp"
+        />
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#FFFFFF"
+        android:orientation="vertical"
+        >
+
+        <GridLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:columnCount="4"
+            tools:targetApi="ice_cream_sandwich">
+
+            <Button
+                android:id="@+id/uno"
+                android:background="#2980B9"
+                android:onClick="uno"
+                android:text="@string/uno"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/dos"
+                android:background="#3498DB"
+                android:onClick="dos"
+                android:text="@string/dos"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/tres"
+                android:background="#1ABC9C"
+                android:onClick="tres"
+                android:text="@string/tres"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/cuatro"
+                android:background="#16A085"
+                android:onClick="cuatro"
+                android:text="@string/cuatro"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/cinco"
+                android:background="#1E8449"
+                android:onClick="cinco"
+                android:text="@string/cinco"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/seis"
+                android:background="#239B56"
+                android:onClick="seis"
+                android:text="@string/seis"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/siete"
+                android:background="#2ECC71"
+                android:onClick="siete"
+                android:text="@string/siete"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/ocho"
+                android:background="#27AE60"
+                android:onClick="ocho"
+                android:text="@string/ocho"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/nueve"
+                android:background="#117A65"
+                android:onClick="nueve"
+                android:text="@string/nueve"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/cero"
+                android:background="#148F77"
+                android:onClick="cero"
+                android:text="@string/cero"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/punto"
+                android:background="#2874A6"
+                android:onClick="punto"
+                android:text="@string/punto"
+                android:textColor="#ffffff" />
+
+            <Button
+                android:id="@+id/borrar"
+                android:background="#1F618D"
+                android:onClick="borrar"
+                android:text="@string/borrar"
+                android:textColor="#FFFFFF" />
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F11E41"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/suma"
+                android:background="#EBEBEB"
+                android:onClick="suma"
+                android:text="@string/mas"
+                android:textColor="#000000"
+                />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/resta"
+                android:background="#EBEBEB"
+                android:onClick="resta"
+                android:text="@string/menos"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/multiplicacion"
+                android:background="#EBEBEB"
+                android:onClick="multiplicacion"
+                android:text="@string/por"
+                android:textColor="#000000" />
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/division"
+                android:background="#EBEBEB"
+                android:onClick="division"
+                android:text="@string/entre"
+                android:textColor="#000000" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#F11E41"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/seno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EBEBEB"
+                android:text="@string/sen"
+                android:textColor="#000000"
+                android:onClick="seno"/>
+
+            <Button
+                android:id="@+id/coseno"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EBEBEB"
+                android:text="@string/cos"
+                android:textColor="#000000"
+                android:onClick="coseno"/>
+
+            <Button
+                android:id="@+id/tangente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EBEBEB"
+                android:text="@string/tangente"
+                android:textColor="#000000"
+                android:onClick="tangente"/>
+
+            <Button
+                android:id="@+id/exponente"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="#EBEBEB"
+                android:text="@string/exponente"
+                android:textColor="#000000"
+                android:onClick="exponente"/>
+
+        </LinearLayout>
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/calcula"
+            android:onClick="hazOperacion"
+            android:text="@string/calcula"
+            android:textColor="#EBEBEB"
+            android:background="#000000"
+            />
+
+    </LinearLayout>
+
+</LinearLayout>
